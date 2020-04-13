@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-var BOARD_SIZE = 5;
+var BOARD_SIZE = 20;
 
 function Square({value, onClick, color }) {
     return (
