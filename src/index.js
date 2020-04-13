@@ -131,12 +131,12 @@ handleClick(i) {
            }
         const desc = move ?
             'Go to move #' + move + ' ---- row: '+ history[move].row + ' col: ' + history[move].col + ' ----' :
-            'Go to game start';
+            'Go to game start'; 
         if (this.state.stepNumber === move)
         {
             return (
                 <li key={move}>
-                <button style={{fontWeight: "bold"}} onClick={() => this.jumpTo(move)}>{desc}</button>
+                <button style={{width: 300, fontWeight: "bold"}} onClick={() => this.jumpTo(move)}>{desc}</button>
                 </li>
             );
         }
@@ -144,7 +144,7 @@ handleClick(i) {
         {
             return (
                 <li key={move}>
-                <button onClick={() => this.jumpTo(move)}>{desc}</button>
+                <button style={{width: 300}} onClick={() => this.jumpTo(move)}>{desc}</button>
                 </li>
             );
         }
