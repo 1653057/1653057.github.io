@@ -6,7 +6,7 @@ var BOARD_SIZE = 20;
 
 function Square({value, onClick, color }) {
     return (
-        <button className="square" onClick={onClick} style={{color: color}}>
+        <button className="square" onClick={onClick} style={{width: 30, height: 30, color: color}}>
             {value}
         </button>
     );
@@ -48,7 +48,7 @@ class Board extends React.Component {
             }
         }
         
-        board.push(<div className="board-row"> {row} </div>);
+        board.push(<div style={{width: 30*BOARD_SIZE}} className="board-row"> {row} </div>);
         }
 
         return (
